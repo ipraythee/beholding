@@ -38,6 +38,10 @@ a:hover { border-bottom-color: var(--accent); }
 
 /* 발 */
 .foot { margin: 6rem 0 4rem; text-align: center; color: var(--muted); font-size: 0.75rem; letter-spacing: 0.08em; }
+.foot p { margin: 0; }
+.foot .contact { margin-top: 0.9rem; }
+.foot .contact a { color: var(--muted); }
+.foot .contact a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* 목록 — 하나의 타임라인 */
 .stream { list-style: none; margin: 0; padding: 0; }
