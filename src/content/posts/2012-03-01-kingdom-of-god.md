@@ -6,8 +6,6 @@ source: "mediaig"
 
 '하나님 나라와 하나님께서 의롭게 여기시는 것을 구하라는' 화두앞에
 
-&nbsp;
-
 ![서예 작품](../../assets/mediaig/2012-03-01.jpg)
 
 <div align="center" style="opacity: 0.6; font-size: 0.9em; margin-top: 8px;">

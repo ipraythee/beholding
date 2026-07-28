@@ -59,9 +59,10 @@ a:hover { border-bottom-color: var(--accent); }
 .post-head h1 { font-size: 1.7rem; font-weight: 400; line-height: 1.5; margin: 0.9rem 0 0; }
 .post-head .place { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.85rem; }
 
-.prose > * + * { margin-top: 1.5rem; }
+/* 문단 사이 숨. 이 한 줄이 글 전체의 간격을 정합니다. */
+.prose > * + * { margin-top: 2.6rem; }
 .prose p { margin: 0; }
-.prose h2 { font-weight: 400; font-size: 1.25rem; margin-top: 3rem; }
+.prose h2 { font-weight: 400; font-size: 1.25rem; margin-top: 4.5rem; }
 .prose blockquote {
   margin: 2rem 0; padding: 0 0 0 1.25rem;
   border-left: 1px solid var(--hairline);
