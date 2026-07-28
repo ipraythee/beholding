@@ -31,10 +31,10 @@ a:hover { border-bottom-color: var(--accent); }
 .wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.5rem; }
 
 /* 머리 — 조용한 문패 하나 */
-.masthead { padding: 5.5rem 0 3rem; text-align: center; }
+.masthead { padding: 5.5rem 1.5rem 3rem; text-align: center; }
 .masthead .name { font-size: 1.5rem; font-weight: 400; letter-spacing: 0.3em; margin: 0; }
 .masthead .name a { color: var(--ink); border: 0; }
-.masthead .motto { margin: 1rem 0 0; font-size: 0.8rem; color: var(--muted); letter-spacing: 0.05em; }
+.masthead .motto { margin: 1.2rem auto 0; max-width: 30rem; font-size: 0.8rem; color: var(--muted); letter-spacing: 0.05em; line-height: 1.85; }
 
 /* 발 */
 .foot { margin: 6rem 0 4rem; text-align: center; color: var(--muted); font-size: 0.75rem; letter-spacing: 0.08em; }
@@ -59,9 +59,11 @@ a:hover { border-bottom-color: var(--accent); }
 .post-head h1 { font-size: 1.7rem; font-weight: 400; line-height: 1.5; margin: 0.9rem 0 0; }
 .post-head .place { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.85rem; }
 
-/* 문단 사이 숨. 이 한 줄이 글 전체의 간격을 정합니다. */
+/* 문단 사이 숨. 아래 2.6rem 한 숫자가 글 전체의 간격을 정합니다.
+   먼저 모든 요소의 여백을 0으로 두고, 두 번째 요소부터 위에 간격을 줍니다.
+   (예전엔 `.prose p { margin: 0 }` 이 더 구체적이라 간격을 항상 이겨버렸습니다.) */
+.prose > * { margin: 0; }
 .prose > * + * { margin-top: 2.6rem; }
-.prose p { margin: 0; }
 .prose h2 { font-weight: 400; font-size: 1.25rem; margin-top: 4.5rem; }
 .prose blockquote {
   margin: 2rem 0; padding: 0 0 0 1.25rem;
