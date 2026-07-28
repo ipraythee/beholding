@@ -10,8 +10,13 @@ npm run dev      # http://localhost:4321
 
 ## 글 쓰는 법
 `src/content/posts/` 에 마크다운 파일 하나 = 글 하나.
-머리말(frontmatter)에 title·date·place·summary를 적고, 영상은 videos에 id만.
-`src/content/posts/0-example.md` 를 복사해 시작하세요. (다 되면 예시 파일은 삭제.)
+파일 이름은 `2012-02-03-bichwojim.md` 처럼 날짜로 시작합니다. 그게 주소가 됩니다.
+이미 있는 글 하나를 복사해 시작하는 게 가장 빠릅니다.
+
+- 머리말(frontmatter): `title` · `date` 는 필수. `place` · `summary` · `source` 는 있으면 좋고.
+- **사진**: 원본을 `src/assets/mediaig/` 에 날짜 이름으로 두고, 본문에
+  `![설명](../../assets/mediaig/2012-02-03.jpg)` 로 불러옵니다. 크기는 CSS가 알아서 맞춥니다.
+- **영상**: 머리말 `videos` 에 provider와 id만. 원본은 Vimeo·YouTube에 그대로 둡니다.
 
 ## Cloudflare Pages 배포
 1. 이 폴더를 GitHub 저장소로 push.
