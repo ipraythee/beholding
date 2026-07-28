@@ -8,7 +8,8 @@ source: "mediaig"
 
 &nbsp;
 
-![서예 작품: 하나님의 나라는 볼 수 있게 임하는 것이 아니요 또 여기 있다 저기 있다고도 못하리니 하나님의 나라는 너희 안에 있느니라](../../assets/mediaig/2012-03-01.jpg)
+![서예 작품: 하나님의 나라는 볼 수 있게 임하는 것이 아니요 또 여기 있다 저기 있다고도 못하리니 하나님의 나라는 너희 안에 있느니라](../../assets/mediaig/2012-03-01.jpg){: style="width: 700px; max-width: 100%; display: block; margin: 0 auto;"}
+
 
 <div align="center" style="opacity: 0.6; font-size: 0.9em;">
   ⟨ <a href="http://www.quakerseoul.org/" target="_blank">서울종교친우회</a> 모임처에서 ⟩

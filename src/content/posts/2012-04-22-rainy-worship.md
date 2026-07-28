@@ -4,6 +4,7 @@ date: 2012-04-22
 source: "mediaig"
 ---
 
-![비오는 날 성당 입구에 모여 있는 우산들](../../assets/mediaig/2012-04-22.jpg)
+![비오는 날 성당 입구에 모여 있는 우산들](../../assets/mediaig/2012-04-22.jpg){: style="width: 700px; max-width: 100%; display: block; margin: 0 auto;"}
+
 
 보편교회의 성소, 피난처를 대하는 일면(一面). 오늘 우리의 예배는 무엇을 내려놓는가?
