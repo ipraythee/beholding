@@ -1,0 +1,77 @@
+/* 바라봄 — 젠 스타일. 여백과 하나의 가는 선, 읽기를 위한 명조. */
+:root {
+  --paper:   #F7F6F3;   /* 종이 바탕 */
+  --ink:     #201F1C;   /* 먹빛 본문 */
+  --muted:   #97938A;   /* 날짜·메타 */
+  --hairline:#E4E1D9;   /* 가는 선 */
+  --accent:  #4F5F58;   /* 청자빛에 가까운 조용한 초록. 링크에만. */
+  --measure: 34rem;     /* 한 줄의 폭 */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Nanum Myeongjo", "Noto Serif KR", Batang, serif;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.95;           /* 넉넉한 행간 = 숨 */
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .2s; }
+a:hover { border-bottom-color: var(--accent); }
+
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.5rem; }
+
+/* 머리 — 조용한 문패 하나 */
+.masthead { padding: 5.5rem 0 3rem; text-align: center; }
+.masthead .name { font-size: 1.5rem; font-weight: 400; letter-spacing: 0.3em; margin: 0; }
+.masthead .name a { color: var(--ink); border: 0; }
+.masthead .motto { margin: 1rem 0 0; font-size: 0.8rem; color: var(--muted); letter-spacing: 0.05em; }
+
+/* 발 */
+.foot { margin: 6rem 0 4rem; text-align: center; color: var(--muted); font-size: 0.75rem; letter-spacing: 0.08em; }
+
+/* 목록 — 하나의 타임라인 */
+.stream { list-style: none; margin: 0; padding: 0; }
+.stream li { padding: 1.9rem 0; border-top: 1px solid var(--hairline); }
+.stream li:last-child { border-bottom: 1px solid var(--hairline); }
+.entry-date { display: block; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.14em; margin-bottom: 0.5rem; }
+.entry-title { font-size: 1.2rem; font-weight: 400; margin: 0; line-height: 1.5; }
+.entry-title a { color: var(--ink); border: 0; }
+.entry-title a:hover { color: var(--accent); }
+.entry-summary { margin: 0.55rem 0 0; color: #55524B; font-size: 0.95rem; }
+
+/* 글 본문 */
+.post-head { padding: 1rem 0 2.5rem; }
+.post-head .eyebrow { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.14em; }
+.post-head h1 { font-size: 1.7rem; font-weight: 400; line-height: 1.5; margin: 0.9rem 0 0; }
+.post-head .place { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.85rem; }
+
+.prose > * + * { margin-top: 1.5rem; }
+.prose p { margin: 0; }
+.prose h2 { font-weight: 400; font-size: 1.25rem; margin-top: 3rem; }
+.prose blockquote {
+  margin: 2rem 0; padding: 0 0 0 1.25rem;
+  border-left: 1px solid var(--hairline);
+  color: #55524B; font-style: normal;
+}
+.prose hr { border: 0; border-top: 1px solid var(--hairline); margin: 3rem auto; width: 3rem; }
+
+.back { display: inline-block; margin: 3.5rem 0 0; font-size: 0.8rem; color: var(--muted); }
+.back:hover { color: var(--accent); border-bottom-color: transparent; }
+
+/* 영상 임베드 — 테두리 없이 16:9 */
+.embed { margin: 2rem 0; }
+.embed .frame { position: relative; width: 100%; padding-top: 56.25%; }
+.embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.embed figcaption { margin-top: 0.7rem; font-size: 0.78rem; color: var(--muted); text-align: center; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

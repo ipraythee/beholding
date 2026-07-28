@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const posts = (await getCollection('posts'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const fmt = (d: Date) =>
+  new Intl.DateTimeFormat('ko-KR', { year: 'numeric', month: 'long' }).format(d);
+---
+<Base>
+  <ul class="stream">
+    {posts.map((p) => (
+      <li>
+        <span class="entry-date">{fmt(p.data.date)}</span>
+        <h2 class="entry-title"><a href={`/posts/${p.id}/`}>{p.data.title}</a></h2>
+        {p.data.summary && <p class="entry-summary">{p.data.summary}</p>}
+      </li>
+    ))}
+  </ul>
+</Base>

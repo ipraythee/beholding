@@ -1,0 +1,27 @@
+---
+import '../styles/global.css';
+interface Props { title?: string; }
+const { title } = Astro.props;
+const siteName = '바라봄';
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title ? `${title} — ${siteName}` : siteName}</title>
+    <!-- 명조 웹폰트. 원하면 주석 풀어 쓰세요. 한글 폰트는 무거우니 나중에 최적화. -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet" /> -->
+  </head>
+  <body>
+    <header class="masthead">
+      <p class="name"><a href="/">바라봄</a></p>
+      <p class="motto">눈이 멀었다가 지금은 보게 되었다</p>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="foot">— 바라봄 —</footer>
+  </body>
+</html>

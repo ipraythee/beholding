@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((p) => ({ params: { slug: p.id }, props: { post: p } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const fmt = (d: Date) =>
+  new Intl.DateTimeFormat('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' }).format(d);
+---
+<Base title={post.data.title}>
+  <article>
+    <header class="post-head">
+      <span class="eyebrow">{fmt(post.data.date)}</span>
+      <h1>{post.data.title}</h1>
+      {post.data.place && <p class="place">{post.data.place}</p>}
+    </header>
+
+    {post.data.videos?.map((v) => (
+      <VideoEmbed provider={v.provider} id={v.id} caption={v.caption} />
+    ))}
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <a class="back" href="/">← 목록으로</a>
+  </article>
+</Base>
