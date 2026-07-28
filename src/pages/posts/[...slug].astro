@@ -2,7 +2,6 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
-import Photo from '../../components/Photo.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -22,10 +21,6 @@ const fmt = (d: Date) =>
       <h1>{post.data.title}</h1>
       {post.data.place && <p class="place">{post.data.place}</p>}
     </header>
-
-    {post.data.photos?.map((p) => (
-      <Photo src={p.src} caption={p.caption} alt={p.alt} />
-    ))}
 
     {post.data.videos?.map((v) => (
       <VideoEmbed provider={v.provider} id={v.id} caption={v.caption} />
