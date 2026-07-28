@@ -8,9 +8,7 @@ source: "mediaig"
 
 &nbsp;
 
-<div align="center">
-  <img src="../../assets/mediaig/2012-03-01.jpg" alt="서예 작품" style="width: 700px; max-width: 100%; height: auto;" />
-</div>
+![서예 작품](../../assets/mediaig/2012-03-01.jpg)
 
 <div align="center" style="opacity: 0.6; font-size: 0.9em; margin-top: 8px;">
   ⟨ <a href="http://www.quakerseoul.org/" target="_blank">서울종교친우회</a> 모임처에서 ⟩
