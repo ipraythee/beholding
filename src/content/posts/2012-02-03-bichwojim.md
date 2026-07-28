@@ -4,9 +4,13 @@ date: 2012-02-03
 source: "mediaig"
 photos:
   - src: "../../assets/mediaig/2012-02-03.jpg"
-    caption: "< [저작](https://blog.naver.com/omegapassion) - 뜻빛깔 >"
+    caption: "< 출처 - 뜻빛깔 >"
     alt: "전시장 흰 좌대 위, 무릎 꿇고 합장한 두 조각상의 뒷모습"
 ---
+
+[뜻빛깔 블로그 바로가기](https://blog.naver.com/omegapassion)
+
+&nbsp;
 
 제가 그때 초대에 응하지 않았던 이유는 결코 삼킬 수 없는 것들을 탐욕스럽게 입이 터지 물어대곤 그 추한 모양새가 적나라하게 내 앞에/ 그에게 비춰짐이 부끄러웠기 때문입니다.
 
