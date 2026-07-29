@@ -13,8 +13,21 @@ const { Content } = await render(post);
 
 const fmt = (d: Date) =>
   new Intl.DateTimeFormat('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' }).format(d);
+
+// 검색 결과와 카톡 카드에 뜰 설명 한 토막.
+// summary 를 적어두었으면 그것을, 없으면 본문 첫머리를 다듬어 씁니다.
+const plain = (post.body ?? '')
+  .replace(/<[^>]*>/g, ' ')                  // 직접 쓴 HTML 태그
+  .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')     // 사진
+  .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')   // 링크는 글자만 남기고
+  .replace(/^[#>\s]+/gm, '')                 // 소제목·인용 표시
+  .replace(/[*_]/g, '')
+  .replace(/\s+/g, ' ')
+  .trim();
+const description =
+  post.data.summary ?? (plain.length > 150 ? plain.slice(0, 150).trim() + '…' : plain);
 ---
-<Base title={post.data.title}>
+<Base title={post.data.title} description={description}>
   <article>
     <header class="post-head">
       <span class="eyebrow">{fmt(post.data.date)}</span>
