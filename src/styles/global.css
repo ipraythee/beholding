@@ -72,6 +72,18 @@ a:hover { border-bottom-color: var(--accent); }
 }
 .prose hr { border: 0; border-top: 1px solid var(--hairline); margin: 3rem auto; width: 3rem; }
 
+/* 바깥 기사로 나가는 링크 한 장.
+   사진은 카드 테두리까지 꽉 차게 (아래 .prose img 규칙을 이겨야 해서 .prose 를 앞에 붙였습니다) */
+.linkcard { display: block; margin: 2.6rem 0; border: 1px solid var(--hairline); padding: 1.1rem 1.25rem; }
+.linkcard:hover { border: 1px solid var(--accent); }
+.prose .linkcard img {
+  display: block; margin: -1.1rem -1.25rem 0.9rem;
+  width: calc(100% + 2.5rem); max-width: none; height: auto; max-height: none;
+}
+.linkcard .lc-cap { display: block; margin-bottom: 0.9rem; font-size: 0.72rem; color: var(--muted); line-height: 1.65; }
+.linkcard .lc-title { display: block; color: var(--ink); font-size: 0.95rem; line-height: 1.6; }
+.linkcard .lc-meta { display: block; margin-top: 0.5rem; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; }
+
 .back { display: inline-block; margin: 3.5rem 0 0; font-size: 0.8rem; color: var(--muted); }
 .back:hover { color: var(--accent); border-bottom-color: transparent; }
 

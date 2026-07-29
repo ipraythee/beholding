@@ -5,7 +5,12 @@ source: "바라봄"
 category: "행함 / 이주민과 함께"
 ---
 
-> [한겨레 — 행선지 속인 채 공항으로, 유학생 '납치' 출국 보도](https://www.hani.co.kr/arti/area/capital/1119996.html)
+<a class="linkcard" href="https://www.hani.co.kr/arti/area/capital/1119996.html" target="_blank" rel="noopener">
+  <img src="../../assets/barabom/2024-02-07.jpg" alt="버스 좌석에 앉아 서류를 든 유학생들의 뒷모습" />
+  <span class="lc-cap">한신대학교 어학당 우즈베키스탄 유학생들이 11월27일 버스에 올라 인천국제공항으로 향하고 있다. 한신대 제공 영상 갈무리</span>
+  <span class="lc-title">행선지 속인 채 공항으로, 유학생 '납치' 출국</span>
+  <span class="lc-meta">한겨레 · hani.co.kr</span>
+</a>
 
 한신, 그 시작을 기억합니다. 북간도에 캐나다연합교회와 함께 세운 은진중학교, 그곳에 김재준이 있었습니다. 그곳에서 강원용, 문익환, 문동환, 그리고 안병무가 자랐습니다. 캐나다가 보여준 파트너로서 선교, 우리에게 값없이 베푼 영향 때문일까요? 같은 삶의 태도가 김재준 선생에게도 흐릅니다. 선생이 월급 70환 중 22환을 남기고 나머지는 가난한 학생과 나눴다는 이야기를 우리는 모두 압니다.
 

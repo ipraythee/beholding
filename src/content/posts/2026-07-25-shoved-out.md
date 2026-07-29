@@ -1,5 +1,5 @@
 ---
-title: "떠밀려 나오다 Shoved out"
+title: "떠밀려 나오다"
 date: 2026-07-25
 source: "바라봄"
 category: "행앎 / 영적 독서"
