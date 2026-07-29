@@ -6,7 +6,7 @@ category: "행함 / 이주민과 함께"
 ---
 
 <a class="linkcard" href="https://www.hani.co.kr/arti/area/capital/1119996.html" target="_blank" rel="noopener">
-  <img src="../../assets/barabom/2024-02-07.jpg" alt="버스 좌석에 앉아 서류를 든 유학생들의 뒷모습" />
+  <img src="/media/2024-02-07.jpg" alt="버스 좌석에 앉아 서류를 든 유학생들의 뒷모습" />
   <span class="lc-cap">한신대학교 어학당 우즈베키스탄 유학생들이 11월27일 버스에 올라 인천국제공항으로 향하고 있다. 한신대 제공 영상 갈무리</span>
   <span class="lc-title">행선지 속인 채 공항으로, 유학생 '납치' 출국</span>
   <span class="lc-meta">한겨레 · hani.co.kr</span>
